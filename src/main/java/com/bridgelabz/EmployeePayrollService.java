@@ -7,31 +7,28 @@ import java.util.Scanner;
 
 public class EmployeePayrollService {
     //Creating Scanner Class object to take input from console
-    static Scanner scanner=new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
     //creating ArrayList object
     public List<EmployeePayroll> employeePayrollList;
 
     // Constructor of Employee Payroll Service class passing List of Employee Payroll class                           
-    public EmployeePayrollService(List<EmployeePayroll> employeePayrollData)
-    {
-        this.employeePayrollList=employeePayrollData;
+    public EmployeePayrollService(List<EmployeePayroll> employeePayrollData) {
+        this.employeePayrollList = employeePayrollData;
     }
 
     //Using readEmployeePayrollData() method taking input form User/console.
-    public void readEmployeePayrollData()
-    {
+    public void readEmployeePayrollData() {
         System.out.println("Enter Employee Id: ");
-        int id=scanner.nextInt();
+        int id = scanner.nextInt();
         System.out.println("Enter Employee Name: ");
-        String name=scanner.next();
+        String name = scanner.next();
         System.out.println("Enter Employee Salary: ");
-        double salary=scanner.nextDouble();
-        employeePayrollList.add(new EmployeePayroll(id,name,salary));
+        double salary = scanner.nextDouble();
+        employeePayrollList.add(new EmployeePayroll(id, name, salary));
     }
 
     // using writeEmployeePayrollData() method Displaying data
-    public void writeEmployeePayrollData()
-    {
+    public void writeEmployeePayrollData() {
         System.out.println("Writing Employee Payroll Data in Console " + employeePayrollList);
     }
 
@@ -45,4 +42,4 @@ public class EmployeePayrollService {
         employeePayrollService.writeEmployeePayrollData();
 
     }
-
+}
