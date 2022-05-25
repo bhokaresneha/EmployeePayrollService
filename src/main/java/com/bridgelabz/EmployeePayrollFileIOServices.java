@@ -65,7 +65,7 @@ public class EmployeePayrollFileIOServices {
 
     public static void addToFile(List<EmployeePayroll> p) {
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))){
-            writer.write(String.valueOf(p));
+            writer.write("\n"+String.valueOf(p));
         } catch(IOException e) {
             System.out.println(e);
 
@@ -75,10 +75,15 @@ public class EmployeePayrollFileIOServices {
         try {
             BufferedReader reader=new BufferedReader(new FileReader(file));
             String st;
+            int count=0;
+            System.out.println("\n Reading From File");
             while ((st= reader.readLine())!=null)
             {
-                System.out.println("\n Reading From File"+st);
+                count++;
+                System.out.println(st);
             }
+            System.out.println(count+"Records in File");
+
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }

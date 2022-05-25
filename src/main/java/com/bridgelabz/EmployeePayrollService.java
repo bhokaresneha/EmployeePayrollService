@@ -20,12 +20,12 @@ public class EmployeePayrollService<employeePayrollList> {
     }
 
     //Using readEmployeePayrollData() method taking input form User/console.
-    public int readEmployeePayrollData(IOService ioService) {
+    public void readEmployeePayrollData(IOService ioService) {
         if(ioService.equals(IOService.FILE_IO))
         {
             EmployeePayrollFileIOServices.readFromFile();
 
-        }else if(ioService.equals(IOService.CONSOLE_IO))
+        }else
         {
             System.out.println("Enter Employee Id: ");
             int id = scanner.nextInt();
@@ -35,7 +35,7 @@ public class EmployeePayrollService<employeePayrollList> {
             double salary = scanner.nextDouble();
             employeePayrollList.add(new EmployeePayroll(id, name, salary));
         }
-        return employeePayrollList.size();
+        System.out.println(employeePayrollList.size()+"Record Added into File");
 
     }
 
@@ -58,10 +58,12 @@ public class EmployeePayrollService<employeePayrollList> {
 
         ArrayList<EmployeePayroll> employeePayroll = new ArrayList<>();
         EmployeePayrollService employeePayrollService = new EmployeePayrollService(employeePayroll);
-        //using EmployeePayrollService class object employeePayrollService calling methods readEmployeePayrollData() and writeEmployeePayrollData
-        int entryCount= employeePayrollService.readEmployeePayrollData(IOService.CONSOLE_IO);
-        System.out.println(entryCount+"Record Added into File");
-        employeePayrollService.writeEmployeePayrollData(IOService.FILE_IO);
+        // Reading From Console and Writing into File
+      //  employeePayrollService.readEmployeePayrollData(IOService.CONSOLE_IO);
+        //employeePayrollService.writeEmployeePayrollData(IOService.FILE_IO);
+        // Reading from File And Writing to Console
+        employeePayrollService.readEmployeePayrollData(IOService.FILE_IO);
+
 
 
 
