@@ -63,6 +63,30 @@ public class EmployeePayrollFileIOServices {
         return true;
     }
 
+    public static void addToFile(List<EmployeePayroll> p) {
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))){
+            writer.write(String.valueOf(p));
+        } catch(IOException e) {
+            System.out.println(e);
+
+        }
+    }
+    public static void readFromFile() {
+        try {
+            BufferedReader reader=new BufferedReader(new FileReader(file));
+            String st;
+            while ((st= reader.readLine())!=null)
+            {
+                System.out.println("\n Reading From File"+st);
+            }
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+
+    }
+
+
+
 
 }
 
