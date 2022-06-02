@@ -33,7 +33,7 @@ public class EmployeePayrollService<employeePayrollList> {
             String name = scanner.next();
             System.out.println("Enter Employee Salary: ");
             double salary = scanner.nextDouble();
-            employeePayrollList.add(new EmployeePayroll(id, name, salary));
+          //  employeePayrollList.add(new EmployeePayroll(id, name, salary));
         }
         System.out.println(employeePayrollList.size()+"Record Added into File");
 

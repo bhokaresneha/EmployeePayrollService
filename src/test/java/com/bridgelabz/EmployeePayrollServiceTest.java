@@ -34,7 +34,14 @@ public class EmployeePayrollServiceTest {
         for(EmployeePayroll data:employeeData){
             System.out.println(data);
         }
-        Assertions.assertEquals(4,employeeData.size());
+        Assertions.assertEquals(3,employeeData.size());
     }
+
+    @Test
+    public void updateRecords_FromPerticularTable()
+    {
+       Assertions.assertTrue(employeePayrollDBServices.updateRecord());
+    }
+
 
 }
