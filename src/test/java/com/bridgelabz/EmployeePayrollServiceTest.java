@@ -49,5 +49,10 @@ public class EmployeePayrollServiceTest {
         Assertions.assertTrue(employeePayrollDBServices.updateQueryPrepare(name,id));
 
     }
-
+    @Test
+    public void retriveEmployeeName_UsingWhereClause()
+    {
+        String sql="SELECT name FROM employee_payroll WHERE start BETWEEN CAST('2018-01-01' AS DATE) AND DATE(NOW())";
+        Assertions.assertTrue(employeePayrollDBServices.retriveName(sql));
+    }
 }

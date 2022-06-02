@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-02T04:17:05" hostname="hp-440-G5" time="0.241">
+<testsuite name="com.bridgelabz.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-02T04:46:53" hostname="hp-440-G5" time="0.256">
   <properties/>
-  <testcase name="updateRecords_FromPerticularTable()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.241"/>
+  <testcase name="retriveEmployeeName_UsingWhereClause()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.256"/>
   <system-out><![CDATA[DB Connected Successfully
-Record Updated Successfully in given Table...
-Data After Update Records=> 
+Tersia
+charlie
 DB Connected Successfully
-Employee PayRoll Data [ID=1, Name = Bill, Salary = 1000000.0]
+Employee PayRoll Data [ID=1, Name = Tersia, Salary = 1000000.0]
 Employee PayRoll Data [ID=2, Name = Tersia, Salary = 300000.0]
 Employee PayRoll Data [ID=3, Name = charlie, Salary = 3000000.0]
 Employee PayRoll Data [ID=4, Name = Boby, Salary = 10000.0]
