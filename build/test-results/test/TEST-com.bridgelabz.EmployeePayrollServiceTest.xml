@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.EmployeePayrollServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-25T03:02:02" hostname="hp-440-G5" time="0.035">
+<testsuite name="com.bridgelabz.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-02T03:36:21" hostname="hp-440-G5" time="0.209">
   <properties/>
-  <testcase name="checkFileDeletedOrNot()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.023"/>
-  <testcase name="displayFilesFromDirectory()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.003"/>
-  <testcase name="checkFileCreatedOrNot()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.002"/>
-  <testcase name="checkFileIsExistOrNot()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.003"/>
-  <system-out><![CDATA[EmployeePayroll.txt Deleted !
-
-File Names With Directories
-
-/home/hp/IdeaProjects/EmployeePayrollService/src/test
-/home/hp/IdeaProjects/EmployeePayrollService/src/main
-
-File Name With extension and Folder Names Available In Directory
-
-test
-main
-File Created EmployeePayroll.txt
-File already Exist
-EmployeePayroll.txt Deleted !
-File Created EmployeePayroll.txt
+  <testcase name="displayRecordsFromTable()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.209"/>
+  <system-out><![CDATA[DB Connected Successfully
+Employee PayRoll Data [ID=1, Name = Tersia, Salary = 1000000.0]
+Employee PayRoll Data [ID=2, Name = Tersia, Salary = 2000000.0]
+Employee PayRoll Data [ID=3, Name = charlie, Salary = 3000000.0]
+Employee PayRoll Data [ID=4, Name = Boby, Salary = 10000.0]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

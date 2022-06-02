@@ -7,12 +7,12 @@ import java.util.Enumeration;
 
 public class JDBCConnection {
 
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         String jdbcURL = "jdbc:mysql://localhost: 3306/Payroll_Service_DB?useSSL=false";
         String userName = "root";
         String password = "welcome123";
 
-        Connection con;
+        Connection con = null;
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -28,7 +28,7 @@ public class JDBCConnection {
 
             System.out.println("Connecting to database:" + jdbcURL);
 
-            con=DriverManager.getConnection(jdbcURL, userName, password);
+            con = DriverManager.getConnection(jdbcURL, userName, password);
 
             System.out.println("Connection is successful!!!!!!" + con);
         } catch (Exception e) {
