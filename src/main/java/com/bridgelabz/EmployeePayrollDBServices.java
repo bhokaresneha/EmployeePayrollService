@@ -1,9 +1,6 @@
 package com.bridgelabz;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,6 +48,19 @@ public class EmployeePayrollDBServices  {
         return true;
     }
 
+    public boolean updateQueryPrepare(String name, int id)  {
+        try {
+            String updatequery = "update employee_payroll set name = ? where id = ?";
+            Connection con = ConnectionToDB.getConnection();
+            PreparedStatement preparedStatement = con.prepareStatement(updatequery);
+            preparedStatement.setString(1, name);
+            preparedStatement.setInt(2, id);
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 
 }
