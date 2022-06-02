@@ -61,6 +61,25 @@ public class EmployeePayrollDBServices  {
             throw new RuntimeException(e);
         }
     }
+    public boolean retriveName(String sql)
+    {
+        try {
+            Connection connection = ConnectionToDB.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
 
+            while (resultSet.next()) {
+                System.out.println(resultSet.getString("name"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        List<EmployeePayroll> employeeData=readData();
+        for(EmployeePayroll data:employeeData)
+        {
+            System.out.println(data);
+        }
+        return true;
+    }
 
 }

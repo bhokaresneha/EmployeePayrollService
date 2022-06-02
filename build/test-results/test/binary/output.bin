@@ -1,8 +1,8 @@
 DB Connected Successfully
-.Record Updated Successfully in given Table...
-Data After Update Records=> 
+Tersia
+charlie
 DB Connected Successfully
->Employee PayRoll Data [ID=1, Name = Bill, Salary = 1000000.0]
+@Employee PayRoll Data [ID=1, Name = Tersia, Salary = 1000000.0]
 ?Employee PayRoll Data [ID=2, Name = Tersia, Salary = 300000.0]
 AEmployee PayRoll Data [ID=3, Name = charlie, Salary = 3000000.0]
 <Employee PayRoll Data [ID=4, Name = Boby, Salary = 10000.0]
