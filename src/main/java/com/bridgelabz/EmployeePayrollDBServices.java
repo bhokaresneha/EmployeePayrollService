@@ -30,5 +30,27 @@ public class EmployeePayrollDBServices  {
         }
         return employeeDataList;
     }
+    public boolean updateRecord(){
+       String sql= "update employee_payroll set salary =300000 where name='Tersia'";
+        try (Connection connection = ConnectionToDB.getConnection();
+             Statement statement = connection.createStatement();)
+        {
+            statement.executeUpdate(sql);
+            System.out.println("Record Updated Successfully in given Table...");
+
+        } catch (SQLException e) {
+            // throw new RuntimeException(e);
+            System.out.println("Record not updated ");
+        }
+        System.out.println("Data After Update Records=> ");
+        List<EmployeePayroll> employeeData=readData();
+        for(EmployeePayroll data:employeeData)
+        {
+            System.out.println(data);
+        }
+        return true;
+    }
+
+
 
 }

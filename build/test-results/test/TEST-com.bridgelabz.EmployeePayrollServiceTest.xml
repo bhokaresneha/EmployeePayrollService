@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-02T03:36:21" hostname="hp-440-G5" time="0.209">
+<testsuite name="com.bridgelabz.EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-02T04:17:05" hostname="hp-440-G5" time="0.241">
   <properties/>
-  <testcase name="displayRecordsFromTable()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.209"/>
+  <testcase name="updateRecords_FromPerticularTable()" classname="com.bridgelabz.EmployeePayrollServiceTest" time="0.241"/>
   <system-out><![CDATA[DB Connected Successfully
-Employee PayRoll Data [ID=1, Name = Tersia, Salary = 1000000.0]
-Employee PayRoll Data [ID=2, Name = Tersia, Salary = 2000000.0]
+Record Updated Successfully in given Table...
+Data After Update Records=> 
+DB Connected Successfully
+Employee PayRoll Data [ID=1, Name = Bill, Salary = 1000000.0]
+Employee PayRoll Data [ID=2, Name = Tersia, Salary = 300000.0]
 Employee PayRoll Data [ID=3, Name = charlie, Salary = 3000000.0]
 Employee PayRoll Data [ID=4, Name = Boby, Salary = 10000.0]
 ]]></system-out>
