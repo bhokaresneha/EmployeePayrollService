@@ -1,15 +1,5 @@
-EmployeePayroll.txt Deleted !
-
-File Names With Directories
-
-6/home/hp/IdeaProjects/EmployeePayrollService/src/test
-6/home/hp/IdeaProjects/EmployeePayrollService/src/main
-
-AFile Name With extension and Folder Names Available In Directory
-
-test
-main
-!File Created EmployeePayroll.txt
-File already Exist
-EmployeePayroll.txt Deleted !
-!File Created EmployeePayroll.txt
+DB Connected Successfully
+@Employee PayRoll Data [ID=1, Name = Tersia, Salary = 1000000.0]
+@Employee PayRoll Data [ID=2, Name = Tersia, Salary = 2000000.0]
+AEmployee PayRoll Data [ID=3, Name = charlie, Salary = 3000000.0]
+<Employee PayRoll Data [ID=4, Name = Boby, Salary = 10000.0]
