@@ -42,6 +42,12 @@ public class EmployeePayrollServiceTest {
     {
        Assertions.assertTrue(employeePayrollDBServices.updateRecord());
     }
+    @Test
+    public void updateRecord()  {
+        String name="Tersia";
+        int id=1;
+        Assertions.assertTrue(employeePayrollDBServices.updateQueryPrepare(name,id));
 
+    }
 
 }
